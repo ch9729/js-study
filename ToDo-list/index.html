@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>ToDo</h1>
+    <div class="todo-container">
+        <input type="text" id="todo-input" onkeydown="keyCodeCheck()"> <!--onkeydown 해당 태그 영역내에서 키보드를 눌렀을때 동작-->
+        <ul id="todo-list"> <!--순서가 없는 테이블--></ul>
+        <!-- <ol> //순서가 있는 테이블
+            <li>할일</li>
+            <li>할일</li>
+        </ol> -->
+    </div>
+    <div class="delete-btn-wrapper">
+        <button onclick="deleteAll()">전체 삭제</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
